@@ -1,4 +1,4 @@
-##How it works 
+How it works 
 
 - This calculator adds, subtracts, divides and multiply's two given numbers and stores the calculation and results in a history log. 
 
