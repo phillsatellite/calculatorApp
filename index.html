@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+    <title>Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    
+<div class="calculator">
+  <div id="showDisplay">0</div>
+
+<div class="buttonRow1">
+    <button onclick="showToDisplay('7')">7</button>
+    <button onclick="showToDisplay('8')">8</button>
+    <button onclick="showToDisplay('9')">9</button>
+    <button onclick="getOperator('/')">/</button>
+</div>
+
+<div class="buttonRow2">
+    <button onclick="showToDisplay('4')">4</button>
+    <button onclick="showToDisplay('5')">5</button>
+    <button onclick="showToDisplay('6')">6</button>
+    <button onclick="getOperator('*')">*</button>
+</div>
+
+<div class="buttonRow3">
+    <button onclick="showToDisplay('1')">1</button>
+    <button onclick="showToDisplay('2')">2</button>
+    <button onclick="showToDisplay('3')">3</button>
+    <button onclick="getOperator('-')">-</button>
+</div>
+
+<div class="buttonRow4">
+    <button onclick="showToDisplay('0')">0</button>
+    <button onclick="clearDisplay()">C</button>
+    <button onclick="calculate()">=</button>
+    <button onclick="getOperator('+')">+</button>
+  </div>
+
+</div>
+
+
+<button id="historyButton" onclick="toggleHistory()">Open History Log</button>
+
+
+<div class="history">
+    <h3>History</h3>
+    <ul id="historyList"></ul>
+<script src="calculatorFunctions.js"></script>
+</body>
+</html>

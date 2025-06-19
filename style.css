@@ -1,0 +1,113 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(#ffffff, #b8b8b8);
+    overflow: hidden;
+}
+
+.calculator {
+    width: 200px;
+    height: 280px;
+    padding: 20px;
+    background: rgba(0, 58, 77, 0.568);
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.867);
+    overflow: hidden;
+    text-align: center;
+    border: 2px solid;
+    border-color: rgba(255, 255, 255, 0.583);
+}
+
+#showDisplay {
+    padding: 15px;
+    gap: 10px;
+    margin-bottom: 25px;
+    background-color: #202020a5;
+    color: rgb(255, 255, 255);
+    font-size: large;
+    border-radius: 5px;
+}
+
+button {
+    width: 45px;
+    height: 45px;
+    padding: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: none;
+    background: rgba(255, 255, 255, 0.169);
+    color: rgb(255, 255, 255);
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.611);
+}
+
+.buttonRow1, .buttonRow2,
+.buttonRow3, .buttonRow4 {
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+    margin-bottom: 10px;
+}
+
+#historyButton {
+    border-radius: 50%;
+    padding: 2.5em;
+    background: rgba(0, 58, 77, 0.568);
+    border: 1px solid white;
+}
+
+#historyButton:hover {
+    background: rgba(255, 255, 255, 0.611);
+}
+
+.history {
+    height: 200px;
+    width: 300px;
+    margin-top: 20px;
+    padding-top: 30px;
+    
+    color: white;
+    background: rgba(0, 58, 77, 0.568);
+    border: 1px solid white;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.867);
+    
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.history h3 {
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+#historyList {
+    list-style: none;
+    text-align: left;
+    margin-top: 5px;
+    padding-top: 5px;
+    width: 75%;
+    overflow-y: auto;
+    flex-grow: 1;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #202020a5;
+}
